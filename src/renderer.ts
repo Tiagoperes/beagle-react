@@ -1,4 +1,4 @@
-import React, { Fragment, FC } from 'react'
+import { Fragment, FC, createElement } from 'react'
 import { map, uniqueId } from 'lodash'
 import { BeagleUIElement } from 'beagle-core'
 import { BeagleConfig } from './types'
@@ -12,13 +12,13 @@ const createReactComponentTree = <Schema>(
 
   if (!Component) {
     console.error(`Error: server driven UI could not find component ${type}. This component and its children won't be rendered.`)
-    return React.createElement(Fragment)
+    return createElement(Fragment)
   }
 
   const componentChildren = map(children, child => createReactComponentTree(components, child))
   const componentProps = { ...props, key, beagleUiTree: ui }
 
-  return React.createElement(Component as FC<any>, componentProps, componentChildren)
+  return createElement(Component as FC<any>, componentProps, componentChildren)
 }
 
 export default createReactComponentTree
