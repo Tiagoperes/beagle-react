@@ -24,7 +24,7 @@ const BeagleRemoteView: FC<LoadParams> = (loadParams) => {
 
   if (!beagleService) return null
   const Loading = beagleService.getConfig().components['loading']
-  return renderedTree ? {renderedTree} : createElement(Loading)
+  return renderedTree ? createElement(Fragment, undefined, renderedTree) : createElement(Loading)
 }
 
 export default BeagleRemoteView
