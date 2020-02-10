@@ -6,7 +6,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "yarn tsc --declaration"
+    "build": "yarn tsc --declaration",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "lodash": "^4.17.15",
