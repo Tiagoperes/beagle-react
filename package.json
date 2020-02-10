@@ -1,7 +1,7 @@
 {
   "name": "beagle-react",
   "version": "0.0.0",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "private": false,
@@ -51,6 +51,8 @@
     "webpack": "4.41.5",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.10.1",
-    "webpack-hot-middleware": "2.25.0"
+    "webpack-hot-middleware": "2.25.0",
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
   }
 }

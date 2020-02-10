@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, Fragment, useState, useContext, useEffect } from 'react'
+import React, { FC, ReactNode, Fragment, useState, useContext, useEffect, createElement } from 'react'
 import { LoadParams } from 'beagle-core'
 import BeagleContext from './context'
 import createReactComponentTree from './renderer'
@@ -24,7 +24,7 @@ const BeagleRemoteView: FC<LoadParams> = (loadParams) => {
 
   if (!beagleService) return null
   const Loading = beagleService.getConfig().components['loading']
-  return renderedTree ? <Fragment>{renderedTree}</Fragment> : React.createElement(Loading)
+  return renderedTree ? <Fragment>{renderedTree}</Fragment> : createElement(Loading)
 }
 
 export default BeagleRemoteView
