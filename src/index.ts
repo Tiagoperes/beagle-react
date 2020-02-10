@@ -3,10 +3,9 @@ import BeagleRemoteView from './component'
 import { BeagleProvider } from './context'
 import { BeagleConfig, BeagleUIService } from './types'
 
-type CreateBeagleUIService<Schema = DefaultSchema> = (config: BeagleConfig<Schema>) =>
-  BeagleUIService<Schema>
-
-const createBeagleUIService = createBeagleCoreUIService as CreateBeagleUIService
+function createBeagleUIService<Schema = DefaultSchema>(config: BeagleConfig<Schema>) {
+  return createBeagleCoreUIService(config)
+}
 
 export {
   createBeagleUIService,
