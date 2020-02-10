@@ -1,0 +1,55 @@
+{
+  "name": "beagle-react",
+  "version": "0.0.0",
+  "main": "dist/index.ts",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "yarn tsc --declaration"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "qs": "^6.9.1",
+    "beagle-core": "https://github.com/Tiagoperes/beagle-core.git#b8a2a2ecb02a6bc84aaa0664a76887bd6681a597"
+  },
+  "peerDependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-external-helpers": "7.8.3",
+    "@babel/plugin-proposal-class-properties": "7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "7.8.3",
+    "@babel/plugin-transform-runtime": "^7.8.3",
+    "@babel/preset-env": "7.8.3",
+    "@babel/preset-react": "7.8.3",
+    "@babel/preset-typescript": "7.8.3",
+    "@types/enzyme": "3.10.4",
+    "@types/enzyme-adapter-react-16": "1.0.5",
+    "@types/jest": "24.9.0",
+    "@types/lodash": "^4.14.149",
+    "@types/qs": "^6.9.0",
+    "@types/react": "16.9.19",
+    "@types/react-dom": "16.9.5",
+    "@types/styled-components": "4.4.2",
+    "babel-loader": "8.0.6",
+    "babel-plugin-styled-components": "1.10.6",
+    "enzyme": "3.11.0",
+    "enzyme-adapter-react-16": "1.15.2",
+    "enzyme-to-json": "3.4.3",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "3.2.0",
+    "http-server": "^0.12.1",
+    "husky": "^4.2.1",
+    "jest": "25.1.0",
+    "node-fetch": "^2.6.0",
+    "source-map-loader": "0.2.4",
+    "ts-jest": "25.0.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1",
+    "webpack-hot-middleware": "2.25.0",
+    "typescript": "3.7.5"
+  }
+}
