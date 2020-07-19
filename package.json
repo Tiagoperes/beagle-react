@@ -10,7 +10,7 @@
     "postinstall": "yarn build"
   },
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "qs": "^6.9.1",
     "typescript": "3.7.5",
     "beagle-core": "https://github.com/Tiagoperes/beagle-core.git#b8a2a2ecb02a6bc84aaa0664a76887bd6681a597"
